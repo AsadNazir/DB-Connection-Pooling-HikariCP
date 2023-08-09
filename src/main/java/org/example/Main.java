@@ -38,6 +38,7 @@ public class Main {
 
         try(Connection C = Ds.getConnection())
         {
+//            CRUD
             Customer.Insert(Cl.get(0),C);
             Customer.getAll(C);
             Customer.delete(2,C);
